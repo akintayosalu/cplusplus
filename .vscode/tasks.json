@@ -17,8 +17,10 @@
                 "-Wconversion",
                 "-Wsign-conversion",
                 "-Werror",
+                "-I./source/includes",
                 "-std=c++17",
-                "${file}",
+                // "${file}",
+                "${fileDirname}/*.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
