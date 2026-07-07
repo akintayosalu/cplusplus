@@ -1,0 +1,21 @@
+#include <iostream>
+
+// The return value of a non-constexpr function is not constexpr
+int five (){
+    return 5;
+}
+
+int main () {
+    constexpr double gravity {9.8}; // constant expression
+    constexpr int sum {4+5}; // constant expression
+    constexpr int something {sum}; // constant expression
+
+    std::cout << "Enter your age: ";
+    int age{};
+    std::cin >> age;
+
+    constexpr int myAge { age };      // compile error: age is not a constant expression
+    constexpr int f { five() };       // compile error: return value of five() is not constexpr
+
+    return 0;
+}
