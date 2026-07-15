@@ -20,8 +20,8 @@
                 "-Werror",
                 "-I./source/includes",
                 "-std=c++17",
-                // "${file}",
-                "${fileDirname}/*.cpp",
+                "${file}",
+                // "${fileDirname}/*.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
