@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/Users/akintayosalu/Documents/cplusplus/libs/plog"
+    "cmake.sourceDirectory": "/Users/akintayosalu/Documents/cplusplus/libs/plog",
+    "cmake.cmakePath": "/opt/homebrew/opt/cmake/bin/cmake"
 }
